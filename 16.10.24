@@ -1,0 +1,121 @@
+#include <iostream>
+
+int main() {
+    int a, b;
+    std::cin >> a >> b;
+    int q = a / b; 
+    int r = a - q * b; 
+
+    r = r + (r < 0) * (b > 0 ? b : -b);
+    std::cout << r << std::endl;
+    return 0;
+}
+#include <iostream>
+
+int main() {
+    int a, b;
+    std::cin >> a >> b;
+    int q = a / b;
+    std::cout << q << std::endl;
+    return 0;
+}
+#include <iostream>
+
+int main() {
+    int a, b;
+    std::cin >> a >> b;
+    int q = a / b;
+    int r = a - q * b; 
+    q = q + (r > 0); 
+    std::cout << q << std::endl;
+    return 0;
+}
+#include <iostream>
+
+int main() {
+    int a, b;
+    std::cin >> a >> b;
+    int eq = 1 - ((a - b) / (a - b + 1));
+    std::cout << eq << std::endl;
+    return 0;
+}
+#include <iostream>
+
+int main() {
+    int n;
+    std::cin >> n;
+    int next_even = n + 2 - (n - (n / 2) * 2);
+    std::cout << next_even << std::endl;
+    return 0;
+}
+#include <iostream>
+
+int main() {
+    int a, b;
+    std::cin >> a >> b;
+    int next = a + b - (a - (a / b) * b);
+    std::cout << next << std::endl;
+    return 0;
+}
+#include <iostream>
+
+int main() {
+    int n;
+    std::cin >> n;
+    int cuts = n - 1;
+    std::cout << cuts << std::endl;
+    return 0;
+}
+#include <iostream>
+
+int main() {
+    int n;
+    std::cin >> n;
+    int result = n + (n / (n + 1)) - (n / (n - 1));
+    std::cout << result << std::endl;
+    return 0;
+}
+#include <iostream>
+
+int main() {
+    int n;
+    std::cin >> n;
+    int abs_value = (n * ((n > 0) - (n < 0)));
+    std::cout << abs_value << std::endl;
+    return 0;
+}
+#include <iostream>
+
+int main() {
+    int a, b;
+    std::cin >> a >> b;
+    int max = (a + b + ((a - b) * ((a - b > 0) - (a - b < 0)))) / 2;
+    std::cout << max << std::endl;
+    return 0;
+}
+#include <iostream>
+
+int main() {
+    int a, b;
+    std::cin >> a >> b;
+    int mod = a - (a / b) * b;
+    int nearest = a - mod + (mod * 2 >= b) * b;
+    std::cout << nearest << std::endl;
+    return 0;
+}
+#include <iostream>
+
+int main() {
+    int k;
+    std::cin >> k;
+
+    int start = 10; 
+    int number = start + (k - 1) / 2;
+    int digit_position = (k - 1) % 2;
+
+    int digit = (number / (10 - digit_position * 10)) % 10;
+
+    std::cout << digit << std::endl;
+    return 0;
+}
+#include <iostream>
